@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+    color: red;
+
+}
+
+.slds-border_bottom {
+    border-bottom: 1px solid #d8dde6;
+}

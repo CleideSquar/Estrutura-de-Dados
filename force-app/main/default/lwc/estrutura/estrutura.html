@@ -1,0 +1,24 @@
+<template>
+    <lightning-card>
+        <div class="slds-m-arround_medium">
+            <h1 class="slds-text-heading_large">
+                Pokemons
+            </h1>
+
+            <!--template for:each, pega uma lista de valores e vai 
+            acessar os valores de maneira independente
+    
+            for:item uma variavel de apoio que recebe o dódigo de maneira
+            individual, acesso a cada repetição feita pela lista-->
+
+            <template for:each={pokemons} for:item="poke">
+                <div key={poke.cod} class="slds-m-vertical_medium slds-p-horizontal_medium slds-border_bottom">
+                    <p class="slds-text-heading_small">Nome: {poke.nome}, Tipo: {poke.tipo}, Nível: {poke.nivel},
+                        Ataque: {poke.ataque}, Defesa: {poke.defesa}, Vida: {poke.vida}</p>
+                </div>
+
+            </template>
+        </div>
+    </lightning-card>
+
+</template>
